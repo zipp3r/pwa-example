@@ -1,0 +1,18 @@
+{
+	"short_name": "PWA Example",
+	"name": "Example of Progressive Web Application",
+	"icons": [
+		{
+			"src": "pic/icon.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "pic/icon.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"start_url": "/",
+	"gcm_sender_id": "103953800507"
+}

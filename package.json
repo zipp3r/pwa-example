@@ -1,0 +1,22 @@
+{
+  "name": "pwa-wxample",
+  "version": "0.0.1",
+  "description": "Example of simple progressive web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "todomvc": "^0.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "workbox-build": "^2.1.0"
+  }
+}
