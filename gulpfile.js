@@ -17,7 +17,7 @@ gulp.task('move-workbox', function() {
 		.pipe(gulp.dest('./public/js/dist/'));
 });
 
-gulp.task('generate-wb-manifest', function () {
+gulp.task('generate-wb-manifest', ['app'], function () {
 	return wbBuild.injectManifest({
 		swSrc: './public/js/src/precache-worker.js',
 		swDest: './public/js/dist/precache-worker.js',
@@ -46,7 +46,7 @@ gulp.task('service-worker', ['move-workbox', 'generate-wb-manifest'], function()
 gulp.task('app', function() {
 	return gulp.src(['./public/js/src/app.js', './public/js/src/push-subscription.js'])
 		.pipe(concat('app.js'))
-		.pipe(gulp.dest('./public/dist'));
+		.pipe(gulp.dest('./public/js/dist'));
 });
 
-gulp.task('build', ['app', 'service-worker']);
+gulp.task('default', ['service-worker']);
