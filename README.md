@@ -1,3 +1,3 @@
 # Тестовое окружение для мастер-класса по PWA
 Ипользование:
-```npm i && node server.js```
+```npm i && gulp && node server.js```
